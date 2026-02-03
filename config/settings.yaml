@@ -1,0 +1,15 @@
+# ═══════════════════════════════════════════════════════════════════════════
+#                           APPLICATION CONFIGURATION
+# ═══════════════════════════════════════════════════════════════════════════
+
+application_settings:
+  threads: 5
+  rhino_api_key: "" # https://developers.rhino.fi/
+
+web3_settings:
+  opbnb_rpc_url: "https://opbnb-rpc.publicnode.com" # Binance Smart Chain RPC URL
+
+attempts_and_delay_settings:
+  delay_before_start: # random delay
+    min: 2 # in seconds
+    max: 3 # in seconds

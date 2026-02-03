@@ -1,4 +1,4 @@
-# 🌐 BNB > opBNB Sender via GasZip [v1.0]
+# 🌐 opBNB > BNB Withdraw via Rhino [v1.0]
 
 <div align="center">
   
@@ -35,7 +35,7 @@
 
 ## 📝 Input Files Structure
 
-### 📁data/target_addresses.txt
+### 📁data/wallets.txt
 
 ```plaintext
 evm_address1
@@ -43,29 +43,22 @@ evm_address2
 ```
 ###
 
-### 📁 data/proxies.txt
-```
-http://user:pass@ip:port
-http://ip:port:user:pass
-http://user:pass:ip:port
-```
 
 
 ## 📊 Results
 
 ```plaintext
-📁 results/sender/
-  ├── 📄 bridge_success.txt  # Successful bridge wallet addresses
-  ├── 📄 bridge_failed.txt  # Failed bridge wallet addresses
+📁 results/rhino_bridge/
+  ├── 📄 rhino_bridge_success.txt  # Successful bridge wallet addresses
+  ├── 📄 rhino_bridge_failed.txt  # Failed bridge wallet addresses
   ```
 
 ## 🚀 Usage
 
 
 1. Configure your settings in settings.yaml
-2. Add your accounts to target_addresses.txt
-3. Add proxies to proxies.txt
-4. Run the checker:
+2. Add your private keys to wallets.txt
+4. Run the bot:
    ```bash
    python run.py
    ```
